@@ -89,10 +89,9 @@ function specialConfirm() {
 
 function writePassword() {
 
-console.log("its going here");
-     generatePassword();
-    const passwordText = document.querySelector("#password");
 
+    generatePassword();
+    const passwordText = document.querySelector("#password");
     passwordText.value = password;
 }
 
@@ -114,22 +113,21 @@ function generatePassword() {
     lowerConfirm();
     numbConfirm();
     specialConfirm();
-    console.log(charsToUse);
+
     for (i = 0; i < lengthOfPW; i++) {
         let randomInt = getRandomInt(charsToUse.length);
         password += charsToUse.charAt(randomInt);
-        console.log(password);
     }
     // Password is currently blank! We need to make a better one
-   
+
 
 
 
     // Main Process
-    
+
 
 
     // Add event listener to generate button
-    
+
 }
 generateBtn.addEventListener("click", writePassword);
